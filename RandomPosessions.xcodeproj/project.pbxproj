@@ -29,7 +29,7 @@
 		78751CE013E6DB72005BBA13 /* RandomPosessions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomPosessions; sourceTree = BUILT_PRODUCTS_DIR; };
 		78751CE413E6DB72005BBA13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78751CE713E6DB72005BBA13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78751CEA13E6DB72005BBA13 /* RandomPosessions-Prefix.pch */ = {isa = PBXFileReference; path = "RandomPosessions-Prefix.pch"; sourceTree = "<group>"; };
+		78751CEA13E6DB72005BBA13 /* RandomPosessions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomPosessions-Prefix.pch"; sourceTree = "<group>"; };
 		78751CEB13E6DB72005BBA13 /* RandomPosessions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomPosessions.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
