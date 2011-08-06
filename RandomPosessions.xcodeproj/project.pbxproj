@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782A1C2C13E8219A003BE7C2 /* Possessions.m in Sources */ = {isa = PBXBuildFile; fileRef = 782A1C2B13E8219A003BE7C2 /* Possessions.m */; };
 		78751CE513E6DB72005BBA13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78751CE413E6DB72005BBA13 /* Foundation.framework */; };
 		78751CE813E6DB72005BBA13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78751CE713E6DB72005BBA13 /* main.m */; };
 		78751CEC13E6DB72005BBA13 /* RandomPosessions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 78751CEB13E6DB72005BBA13 /* RandomPosessions.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		782A1C2A13E8219A003BE7C2 /* Possessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Possessions.h; sourceTree = "<group>"; };
+		782A1C2B13E8219A003BE7C2 /* Possessions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Possessions.m; sourceTree = "<group>"; };
 		78751CE013E6DB72005BBA13 /* RandomPosessions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomPosessions; sourceTree = BUILT_PRODUCTS_DIR; };
 		78751CE413E6DB72005BBA13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78751CE713E6DB72005BBA13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				78751CE713E6DB72005BBA13 /* main.m */,
+				782A1C2A13E8219A003BE7C2 /* Possessions.h */,
+				782A1C2B13E8219A003BE7C2 /* Possessions.m */,
 				78751CEB13E6DB72005BBA13 /* RandomPosessions.1 */,
 				78751CE913E6DB72005BBA13 /* Supporting Files */,
 			);
@@ -136,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78751CE813E6DB72005BBA13 /* main.m in Sources */,
+				782A1C2C13E8219A003BE7C2 /* Possessions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +230,7 @@
 				78751CF113E6DB72005BBA13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
