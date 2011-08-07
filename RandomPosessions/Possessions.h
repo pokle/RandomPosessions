@@ -17,6 +17,8 @@
     
 }
 
++ (id) randomPossession;
+
 - (id) initWithPossessionName: (NSString*)name
                valueInDollars: (int)value
                  serialNumber: (NSString*)sNumber

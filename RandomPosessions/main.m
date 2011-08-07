@@ -30,12 +30,17 @@ int main (int argc, const char * argv[])
     [p setPossessionName: @"Red Sofa"];
     [p setValueInDollars: 100];
     [p setSerialNumber: @"B12ic"];
-    NSLog(@"I have a: %@", p);
+    NSLog(@"I have: %@", p);
 
     
     [items release];
     items = nil;
 
+    
+    for(int i=0; i<10; i++) {
+        NSLog(@"rnd: %@", [Possessions randomPossession]);
+    }
+    
 
     [pool drain];
     return 0;
