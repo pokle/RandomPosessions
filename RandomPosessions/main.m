@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Possessions.h"
+#import "Possession.h"
 
 int main (int argc, const char * argv[])
 {
@@ -26,7 +26,7 @@ int main (int argc, const char * argv[])
     NSLog(@"now: %@", [[NSDate date] descriptionWithLocale:[NSLocale systemLocale]]);
 
     
-    Possessions *p = [Possessions new];
+    Possession *p = [Possession new];
     [p setPossessionName: @"Red Sofa"];
     [p setValueInDollars: 100];
     [p setSerialNumber: @"B12ic"];
@@ -38,7 +38,7 @@ int main (int argc, const char * argv[])
 
     
     for(int i=0; i<10; i++) {
-        NSLog(@"rnd: %@", [Possessions randomPossession]);
+        NSLog(@"rnd: %@", [Possession randomPossession]);
     }
     
 
