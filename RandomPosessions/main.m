@@ -30,9 +30,8 @@ int main (int argc, const char * argv[])
     [p setPossessionName: @"Red Sofa"];
     [p setValueInDollars: 100];
     [p setSerialNumber: @"B12ic"];
-    NSLog(@"p: %@ %d %@ %@", [p dateCreated], [p valueInDollars], [p serialNumber], [p possessionName]);
+    NSLog(@"I have a: %@", p);
 
-    
     
     [items release];
     items = nil;
