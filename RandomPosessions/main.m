@@ -10,8 +10,7 @@
 #import "Possession.h"
 
 int main (int argc, const char * argv[])
-{
-
+{    
     NSAutoreleasePool * pool = [NSAutoreleasePool new];
 
     NSMutableArray *items = [NSMutableArray new];
