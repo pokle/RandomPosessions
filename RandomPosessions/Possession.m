@@ -16,8 +16,8 @@
     NSArray *randomAdjectiveList = [NSArray arrayWithObjects: @"Fluffy", @"Rusty", @"Shiny", nil];
     NSArray *randomNounList = [NSArray arrayWithObjects: @"Bear", @"Spork", @"Mac", nil];
     
-    int adjectiveIndex = rand() % [randomAdjectiveList count];
-    int nounIndex = (int)rand() % [randomNounList count];
+    int adjectiveIndex = (int)(rand() % [randomAdjectiveList count]);
+    int nounIndex = (int)(rand() % [randomNounList count]);
     
     NSString *randomName = [NSString stringWithFormat:@"%@ %@",
                             [randomAdjectiveList objectAtIndex:adjectiveIndex],
@@ -35,7 +35,7 @@
     Possession *newPossession = [[self alloc] initWithPossessionName:randomName 
                                                        valueInDollars:randomValue
                                                          serialNumber:randomSerialNumber];
-
+    
     return newPossession;
 }
 
