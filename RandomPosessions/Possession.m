@@ -67,9 +67,10 @@
 
 - (void) dealloc
 {
-    [possessionName release];
-    [serialNumber release];
-    [dateCreated release];
+    // Setting these to nil via the accessors will release the old values.
+    [self setPossessionName: nil];
+    [self setSerialNumber: nil];
+    [self setDateCreated: nil];
     [super dealloc];
 }
 
@@ -78,53 +79,13 @@
 - (NSString *)description { 
     return [NSString stringWithFormat:@"%@ -- %@ (%@): Worth $%d, recorded on %@", 
             isa,
-            possessionName,
-            serialNumber,
-            valueInDollars,
-            dateCreated];
-}
-
-- (void) setPossessionName: (NSString*)str
-{
-    [str retain];
-    [possessionName release];
-    possessionName = str;
-}
-
-- (NSString*) possessionName
-{
-    return possessionName;
-}
-
-- (void) setSerialNumber: (NSString*)str
-{
-    [str retain];
-    [serialNumber release];
-    serialNumber = str;
-}
-
-- (NSString*) serialNumber
-{
-    return serialNumber;
-}
-
-- (void) setValueInDollars: (int)val
-{
-    valueInDollars = val;
-}
-
-- (int) valueInDollars
-{
-    return valueInDollars;
-}
-
-- (NSDate*) dateCreated
-{
-    return dateCreated;
+            [self possessionName],
+            [self serialNumber],
+            [self valueInDollars],
+            [self dateCreated]];
 }
 
 
-
-
+@synthesize possessionName, serialNumber, valueInDollars, dateCreated;
 
 @end
